@@ -1,0 +1,8 @@
+{
+  "android": {
+    "package": "com.anonymous.dpsforo2"
+  },
+  "ios": {
+    "bundleIdentifier": "com.anonymous.dpsforo2"
+  }
+}

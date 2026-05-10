@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "408281365009",
+    "project_id": "controlgastos-dps",
+    "storage_bucket": "controlgastos-dps.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408281365009:android:a5814eb794e2f95b338fb0",
+        "android_client_info": {
+          "package_name": "com.anonymous.Gestion_Gastos_DPS"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408281365009-sajofqk835bdqumb6555oea0dms4v3l1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRG5vjmuqULjbGJYpw8GukZmp1EoSwLg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408281365009-sajofqk835bdqumb6555oea0dms4v3l1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
