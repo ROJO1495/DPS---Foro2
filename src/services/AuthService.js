@@ -1,6 +1,7 @@
 // src/services/AuthService.js
 import { initializeApp } from 'firebase/app';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore'; // NUEVO: Importamos Firestore
 
 // Estos datos los copias de tu consola de Firebase (App Web)
 const firebaseConfig = {
@@ -14,7 +15,12 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
+
+// MODIFICADO: Le agregamos "export" para que tu pantalla pueda leer quién está logueado
+export const auth = getAuth(app); 
+
+// NUEVO: Inicializamos y exportamos la base de datos para que puedas guardar los gastos
+export const db = getFirestore(app); 
 
 class AuthService {
   // Metodo para el REGISTRO
