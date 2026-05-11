@@ -61,7 +61,9 @@ const AgregarGasto = () => {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
-        <Text style={styles.titulo}>Registrar Gasto</Text>
+        <View style={styles.tituloContainer}>
+          <Text style={styles.titulo}>Registrar Gasto</Text>
+        </View>
 
         <Text style={styles.label}>Descripción</Text>
         <TextInput
@@ -101,7 +103,6 @@ const AgregarGasto = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     padding: 20,
     backgroundColor: '#F0F2F5',
     justifyContent: 'center'
@@ -109,19 +110,27 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: '#fff',
     borderRadius: 15,
-    padding: 20,
+    paddingHorizontal: 20,
+    paddingBottom: 20,
+    overflow: 'hidden',
     elevation: 5,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 10,
   },
+  tituloContainer: {
+    backgroundColor: '#1A4F7A',
+    marginHorizontal: -20,
+    marginBottom: 20,
+    paddingHorizontal: 20,
+    paddingVertical: 14,
+  },
   titulo: {
     fontSize: 22,
     fontWeight: 'bold',
-    marginBottom: 20,
     textAlign: 'center',
-    color: '#333'
+    color: '#FFFFFF',
   },
   label: {
     fontSize: 14,
